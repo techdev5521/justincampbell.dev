@@ -1,4 +1,17 @@
-section {
-    width: 100svw;
-    height: 100svh;
+#hero-text {
+    font-size: 4rem;
+}
+
+#headshot img {
+    filter: drop-shadow(1px 1px 4px rgba(var(--bs-primary-rgb), .5)) 
+            drop-shadow(-1px -1px 4px rgba(var(--bs-danger-rgb), .5));
+}
+
+.text-gradient {
+    background-color: var(--bs-primary);
+    background: linear-gradient(135deg, var(--bs-primary) 0%, var(--bs-danger) 100%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
 }

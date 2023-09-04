@@ -21,29 +21,50 @@
   </head>
   <body>
     <header>
-        <nav class="navbar navbar-expand-lg">
-            <div class="container">
+        <nav class="navbar">
+            <div class="container flex-md-row flex-column">
               <a class="navbar-brand" href="#"><i class="bi bi-device-hdd"></i> justincampbell.dev</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-items" >
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbar-items">
-                <div class="navbar-nav">
+                <div class="navbar-nav flex-row gap-3">
                   <a class="nav-link active" href="#home">Home</a>
                   <a class="nav-link" href="#about-me">About Me</a>
                   <a class="nav-link" href="#portfolio">Portfolio</a>
                   <a class="nav-link" href="#contact">Contact</a>
                 </div>
-              </div>
             </div>
           </nav>
       </div>
     </header>
 
-    <section id="home" class="container"><h1>Home</h1></section>
-    <section id="about-me" class="container"><h1>About Me</h1></section>
-    <section id="portfolo" class="container"><h1>Portfolio</h1></section>
-    <section id="contact" class="container"><h1>Contact</h1></section>
+    <section id="home" class="container mb-5">
+        <div class="row">
+          <div class="col-md d-flex flex-column justify-content-center align-items-center text-center">
+            <h1 id="hero-text">I'm Justin. I <span class="text-gradient">design and develop websites.</span></h1>
+            <ul class="list-group list-group-horizontal mx-auto mt-3">
+              <li class="list-group-item"><ion-icon name="logo-python"></ion-icon> Python</li>
+              <li class="list-group-item"><ion-icon name="logo-nodejs"></ion-icon> JavaScript</li>
+              <li class="list-group-item"><ion-icon name="logo-react"></ion-icon> ReactJS</li>
+            </ul>
+            <ul class="list-group list-group-horizontal mx-auto mb-3">
+              <li class="list-group-item"><i class="bi bi-bounding-box"></i></i></ion-icon> Frontend</li>
+              <li class="list-group-item"><i class="bi bi-code-slash"></i> Backend</li>
+              <li class="list-group-item"><i class="bi bi-database"></i> DevOps</li>
+            </ul>
+          </div>
+          <div class="col-md" id="headshot">
+            <img class="img-fluid" data-bs-theme="dark" src="./headshot.png" alt="Justin Campbell's Headshot">
+          </div>
+        </div>
+    </section>
+
+    <section id="about-me" class="container">
+        <h1>About me</h1>
+    </section>
+    <section id="portfolo" class="container">
+        <h1>Portfolio</h1>
+    </section>
+    <section id="contact" class="container">
+        <h1>Contact</h1>
+    </section>
 
     <!-- Bootstrap JS -->
     <script
@@ -51,6 +72,10 @@
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
     ></script>
+    <!-- Ionic Icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
     <!-- Custom JS -->
     <script src="app.js"></script>
   </body>
